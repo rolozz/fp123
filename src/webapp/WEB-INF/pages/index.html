@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Examples</title>
+</head>
+<body>
+<h1>Examples List</h1>
+<ul>
+    <li th:each="example : ${examples}" th:text="${example.name}">Example</li>
+</ul>
+</body>
+</html>
